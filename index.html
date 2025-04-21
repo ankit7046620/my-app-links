@@ -1,75 +1,206 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My App Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Patel | Flutter Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fdfbfb, #ebedee);
-      padding: 40px 20px;
+      background: #f1f3f6;
       margin: 0;
+      padding: 40px 20px;
     }
-
-    h1 {
+    h1, h2 {
       text-align: center;
-      color: #333;
-      margin-bottom: 40px;
-      font-size: 2.5rem;
+      color: #222;
     }
-
     .container {
-      display: flex;
-      flex-direction: column;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+      margin-top: 30px;
     }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      padding: 20px 24px;
-      transition: transform 0.2s ease;
+    .app-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
     }
-
-    .card:hover {
-      transform: scale(1.02);
+    .app-card:hover {
+      transform: translateY(-5px);
     }
-
-    .card a {
-      text-decoration: none;
-      color: #007bff;
-      font-weight: 600;
+    .app-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 12px;
+      border-radius: 10px;
+    }
+    .app-card a {
       font-size: 1.1rem;
+      font-weight: 600;
+      color: #007bff;
+      text-decoration: none;
     }
-
-    .card a:hover {
-      text-decoration: underline;
+    .app-card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 8px;
     }
-
-    @media (max-width: 600px) {
-      .card {
-        padding: 16px 20px;
-      }
+    .resume-section {
+      margin-top: 60px;
+    }
+    .resume-section h2 {
+      margin-bottom: 30px;
+    }
+    .resume-block {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      margin-bottom: 20px;
+    }
+    .resume-block h3 {
+      margin-top: 0;
+      color: #111;
+    }
+    .resume-block p, .resume-block li {
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .contact {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .resume-link {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .resume-link a {
+      color: #007bff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>📱 My App Portfolio</h1>
   <div class="container">
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.app.amalfijets" target="_blank">Amalfi</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.differenz.dogidentifier&hl=en_IN" target="_blank">Dog Identifier</a></div>
-    <div class="card"><a href="https://codecanyon.net/item/cartmax-woocommerce-flutter-ecommerce-application/42600166?s_rank=2" target="_blank">Cartmax</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore.owner" target="_blank">Gotoliquorstore (Admin)</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore" target="_blank">Gotoliquorstore (Public)</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.kmsgst.app" target="_blank">KMSGST</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.techgrains.swasgym&hl=en_IN" target="_blank">SwasGym</a></div>
-    <div class="card"><a href="https://play.google.com/store/apps/details?id=com.housemax.com&hl=en_IN" target="_blank">HouseMax</a></div>
-    <div class="card"><a href="https://apps.apple.com/kw/app/kve-app/id6444339093" target="_blank">KVE App (iOS)</a></div>
+    <h1>🚀 My App Portfolio</h1>
+    <div class="app-grid">
+      <div class="app-card">
+        <img src="images/amalfi.png" alt="Amalfi Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.app.amalfijets" target="_blank">Amalfi</a>
+        <p>Private Jet Booking & Luxury Travel Solutions</p>
+      </div>
+      <div class="app-card">
+        <img src="images/dogidentifier.png" alt="Dog Identifier Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.differenz.dogidentifier&hl=en_IN" target="_blank">Dog Identifier</a>
+        <p>Identify dog breeds instantly with AI</p>
+      </div>
+      <div class="app-card">
+        <img src="images/cartmax.png" alt="Cartmax Logo">
+        <a href="https://codecanyon.net/item/cartmax-woocommerce-flutter-ecommerce-application/42600166?s_rank=2" target="_blank">Cartmax</a>
+        <p>WooCommerce Flutter eCommerce Solution</p>
+      </div>
+      <div class="app-card">
+        <img src="images/gotoliquor-admin.png" alt="Gotoliquorstore Admin Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore.owner" target="_blank">Gotoliquorstore (Admin)</a>
+        <p>Liquor store management app for store owners</p>
+      </div>
+      <div class="app-card">
+        <img src="images/gotoliquor-public.png" alt="Gotoliquorstore Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore" target="_blank">Gotoliquorstore (Public)</a>
+        <p>Public liquor delivery app with location ordering</p>
+      </div>
+      <div class="app-card">
+        <img src="images/kmsgst.png" alt="KMSGST Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.kmsgst.app" target="_blank">KMSGST</a>
+        <p>GST billing and financial reporting system</p>
+      </div>
+      <div class="app-card">
+        <img src="images/swasgym.png" alt="SwasGym Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.techgrains.swasgym&hl=en_IN" target="_blank">SwasGym</a>
+        <p>Gym member tracking and attendance system</p>
+      </div>
+      <div class="app-card">
+        <img src="images/housemax.png" alt="HouseMax Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.housemax.com&hl=en_IN" target="_blank">HouseMax</a>
+        <p>Real estate listing and property management</p>
+      </div>
+      <div class="app-card">
+        <img src="images/kveapp.png" alt="KVE App Logo">
+        <a href="https://apps.apple.com/kw/app/kve-app/id6444339093" target="_blank">KVE App (iOS)</a>
+        <p>Entertainment platform with exclusive content</p>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>📄 Resume</h2>
+      <div class="contact">
+        <p><strong>Location:</strong> Surat, India</p>
+        <p><strong>Email:</strong> patelankit70466@gmail.com</p>
+        <p><strong>Phone:</strong> +91 84606 24920 / +91 70466 20477</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ankit-patel-083434a2" target="_blank">ankit-patel-083434a2</a></p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Professional Summary</h3>
+        <p>Flutter Developer with 3.4+ years of experience in building scalable, high-performance mobile applications. Skilled in Flutter, Dart, Firebase, and various state management tools. Known for delivering clean code and pixel-perfect UIs in Agile teams.</p>
+      </div>
+      <div class="resume-block">
+        <h3>Core Competencies</h3>
+        <p>Flutter, Dart, Firebase (Firestore, Auth, Cloud Functions), RESTful APIs, Provider, BLoC, GetX, MobX, Git, Postman, Android Studio, VS Code, Payment Gateway Integration, Third-party SDKs, FlutterFlow, Performance Optimization</p>
+      </div>
+      <div class="resume-block">
+        <h3>Professional Experience</h3>
+        <ul>
+          <li><strong>Techgrains Technology, Ahmedabad</strong> – Flutter Developer (June 2024 – Present)</li>
+          <li><strong>Differenz System, Surat</strong> – Flutter Developer (Sept 2022 – May 2024)</li>
+          <li><strong>CoderKube Technologies, Surat</strong> – Junior Flutter Developer (Aug 2021 – May 2022)</li>
+        </ul>
+      </div>
+      <div class="resume-block">
+        <h3>Key Projects</h3>
+        <ul>
+          <li>Gotoliquor Store App</li>
+          <li>KMS GST App</li>
+          <li>Swas Gym</li>
+          <li>Mash App</li>
+          <li>Dheerta</li>
+          <li>Peak Online Support</li>
+        </ul>
+      </div>
+      <div class="resume-block">
+        <h3>Education</h3>
+        <p><strong>B.Tech in Computer Engineering</strong> – CGPIT, Bardoli (2018 – 2021)</p>
+        <p><strong>Diploma in Computer Engineering</strong> – CGPIT, Bardoli (2015 – 2018)</p>
+      </div>
+      <div class="resume-block">
+        <h3>Personal Details</h3>
+        <ul>
+          <li>Date of Birth: 25 July 1995</li>
+          <li>Gender: Male</li>
+          <li>Marital Status: Unmarried</li>
+          <li>Nationality: Indian</li>
+          <li>Languages: English, Hindi, Gujarati</li>
+          <li>Permanent Address: 114 New Faliya, Gopla, Ta: Mhauva, Di: Surat, Gujarat</li>
+          <li>Current Address: Shree Panch Villa Bungalows, Memnagar, Ahmedabad, Gujarat</li>
+        </ul>
+      </div>
+
+      <p class="resume-link">
+        <a href="Ankit_Patel_2 (1).pdf" target="_blank">View / Download Resume (PDF)</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
