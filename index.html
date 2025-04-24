@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,9 @@
       background: #f5f7fa;
       color: #2c3e50;
       padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     h1 {
       font-size: 3rem;
@@ -27,6 +30,7 @@
     .container {
       max-width: 1200px;
       margin: auto;
+      flex: 1;
     }
     .app-grid {
       display: grid;
@@ -68,66 +72,86 @@
       color: #7f8c8d;
       margin-top: 10px;
     }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #95a5a6;
+      margin-top: 40px;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🚀 My App Portfolio</h1>
+    <h1>📱 App Showcase by Ankit Patel</h1>
     <div class="app-grid">
+
+      <!-- All app cards -->
       <div class="app-card">
-         <img src="https://play-lh.googleusercontent.com/UFPhbZpy-TAHSbdZukZCk7yXwh9tk6yzOVG8pTV8oREzygVID6Jlg9c1m5KkjZfO-OM=w480-h960-rw" alt="Amalfi Logo">
+        <img src="https://play-lh.googleusercontent.com/UFPhbZpy-TAHSbdZukZCk7yXwh9tk6yzOVG8pTV8oREzygVID6Jlg9c1m5KkjZfO-OM=w480-h960-rw" alt="Amalfi Logo">
         <a href="https://play.google.com/store/apps/details?id=com.app.amalfijets" target="_blank">Amalfi</a>
         <p>Private Jet Booking & Luxury Travel Solutions</p>
       </div>
-     
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/MCEaKlaDlKhtg87NU5X9gNQYvxLvQd1A2kqqJefLQaquP80vMQ46SsIsxFo0wBT_vA=s96-rw" alt="Dog Identifier Logo">
         <a href="https://play.google.com/store/apps/details?id=com.differenz.dogidentifier&hl=en_IN" target="_blank">Dog Identifier</a>
         <p>Identify dog breeds instantly with AI</p>
       </div>
+
       <div class="app-card">
         <img src="https://previews.customer.envatousercontent.com/files/461636944/Thumbnail.png" alt="Cartmax Logo">
         <a href="https://codecanyon.net/item/cartmax-woocommerce-flutter-ecommerce-application/42600166?s_rank=2" target="_blank">Cartmax</a>
         <p>WooCommerce Flutter eCommerce Solution</p>
       </div>
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/jX2ZyMl4JJJuaXi3u0BVAGbmUB5A9jXG7Nm5ua3VXvm0aIgt7KYzUqKVYsOF1GWh9h0=w480-h960-rw" alt="Gotoliquorstore Admin Logo">
         <a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore.owner" target="_blank">Gotoliquorstore (Admin)</a>
         <p>Liquor store management app for store owners</p>
       </div>
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/v0C9x5SYUBaEPOc6OumL0XpwmI3gHrKDqZ0JjFiodLQruLvKg0Gm9qnG_24nDXMpk8s=w480-h960-rw" alt="Gotoliquorstore Logo">
         <a href="https://play.google.com/store/apps/details?id=com.gotoliquorstore" target="_blank">Gotoliquorstore (Public)</a>
         <p>Public liquor delivery app with location ordering</p>
       </div>
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/FIqMPuBkLt74eAJqmQSORTEpZIJXyjm-0-_Ak0xVHSEU8l4-boaBDB_D5tD6h9YqGL4=w480-h960-rw" alt="KMSGST Logo">
         <a href="https://play.google.com/store/apps/details?id=com.kmsgst.app" target="_blank">KMSGST</a>
         <p>GST billing and financial reporting system</p>
       </div>
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/Nv0RI2XgnCOOE_xz1ToAuWg6nGSLQvJLlkGhN-20KwML8PCUTyr_CTf8eITUPedkcXM=w480-h960-rw" alt="SwasGym Logo">
         <a href="https://play.google.com/store/apps/details?id=com.techgrains.swasgym&hl=en_IN" target="_blank">SwasGym</a>
         <p>Gym member tracking and attendance system</p>
       </div>
+
       <div class="app-card">
         <img src="https://play-lh.googleusercontent.com/szetGLVoVDtji3PiCccV-3nldYIRytT3jSwhPa51Bew2OLeDvA9Y_6Mt1pmlZF_FDX78=w480-h960-rw" alt="HouseMax Logo">
         <a href="https://play.google.com/store/apps/details?id=com.housemax.com&hl=en_IN" target="_blank">HouseMax</a>
         <p>Real estate listing and property management</p>
       </div>
 
- <div class="app-card">
-        <img src="https://play-lh.googleusercontent.com/ELEgN0OVC0DcCAg3nbpCzU4g3qTKeFQcb8SEzByVqqzdeAE2PDmy1EhvhsliKLr0Eyci=w480-h960-rw" alt="ponline Logo">
-        <a href="https://play.google.com/store/apps/details?id=com.peakonline.app&hl=en_GB" target="_blank">peakonline</a>
-        <p>Peak Online Support mobile app helps you stay connected to your website services without the need of 3rd party platforms. Live chat, support tickets, projects, quotes, package information and more in one convenient place.</p>
+      <div class="app-card">
+        <img src="https://play-lh.googleusercontent.com/ELEgN0OVC0DcCAg3nbpCzU4g3qTKeFQcb8SEzByVqqzdeAE2PDmy1EhvhsliKLr0Eyci=w480-h960-rw" alt="PeakOnline Logo">
+        <a href="https://play.google.com/store/apps/details?id=com.peakonline.app&hl=en_GB" target="_blank">PeakOnline</a>
+        <p>Stay connected to your web services. Live chat, tickets, projects, and more in one app.</p>
       </div>
-      
+
       <div class="app-card">
         <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/de/09/7c/de097cd0-1de4-3c0c-3880-f7bf1eb9c687/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp" alt="KVE App Logo">
         <a href="https://apps.apple.com/kw/app/kve-app/id6444339093" target="_blank">KVE App (iOS)</a>
         <p>Entertainment platform with exclusive content</p>
       </div>
+
     </div>
   </div>
+
+  <footer>
+    2021 – 2025 All Rights Reserved
+  </footer>
 </body>
 </html>
